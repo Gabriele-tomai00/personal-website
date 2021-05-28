@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+      <meta charset="utf-8">
+      <title>Homepage</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/timeline.css">
+      <link rel="stylesheet" type="text/css" id="theme" href="css/light.css"/>
+ 
+      <!-- ICONS  -->
+      <link rel="stylesheet" href="fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+     
+      <!-- per gestire bene il responsive -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+   </head>
+   <body onload="show_infowindows()">
+
+      <!-- TOP BAR _______________________________________________________________________________-->
+
+      <nav id="home_nav">
+         <a href='#hobby'>LA MIA STORIA</a>
+         <a href='#timeline'>PASSIONI</a>
+         <a href='pages/contact.html'>CONTATTI</a>
+         <a id='element_botton_language' onclick='switch_language();'>
+            <div id='round_botton_language'>EN</div>
+         </a>
+      </nav>
+     
+      <!-- _______________________________________________________________________________-->
+
+      <header>
+         <!--BOTTONE PER SWITCH TEMA CSS ____________________________________________________-->
+         <input type="checkbox" class="checkbox" id="chk"/>
+         <label class="label" for="chk">
+         <i class="fas fa-sun"></i>
+         <i class="fas fa-moon"></i>
+         <span class="ball"></span>
+         </label>
+
+         <!-- _________INFO_THEME AND INFO_LANGUAGE__________________________________________-->
+
+               <span id="info_theme">USA IL TEMA SCURO<br>per preservare la tua vista!</span>
+               <span id="info_language">CAMBIA LINGUA! Scegli tra inglese e italiano</span> 
+         <!-- _______________________________________________________________________________-->
+
+         <div id="title">TITOLO</div>
+         <div id="subtitle">
+            <p id='my_age'></p>
+         </div>
+
+
+      </header>
+      <!-- TIME LINE  ___________________________________________________________________________________________________________-->
+      <h1 id="timeline_link">NON TRADOTTO</h1>
+      <section class="cd_timeline" id="cd_timeline">
+         <!-- _______________________________________________________________________________-->
+         <div class="cd_timeline-block" id="timeline_block_1">
+            <img class='cd_timeline-img cd-movie' src='img/storyline/Fagagna.jpg' alt='Fagagna'> 
+            <div class='cd_timeline-content'>
+               <h2>Title of section 1</h2>
+               <!-- sottotitolo ____-->
+               <div class='timeline-content-info'> 
+                  <span class='timeline-content-info-title'>
+                  <i class='fa fa-certificate' aria-hidden='true'></i>
+                  27/09/2000
+                  </span>
+               </div>
+               <!-- _______________________________________________________-->
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+            </div>
+         </div>
+         <!-- _______________________________________________________________________________-->
+         <div class="cd_timeline-block" id="timeline_block_2">
+            <img class="cd_timeline-img cd-movie" src="img/storyline/Malignani.jpg" alt="Malignani"> 
+            <div class="cd_timeline-content">
+               <h2>Title of section 2</h2>
+               <!-- sottotitolo ____-->
+               <div class="timeline-content-info"> 
+                  <span class="timeline-content-info-title">
+                  <i class="fa fa-certificate" aria-hidden="true"></i>
+                  27/09/2000
+                  </span>
+               </div>
+               <!-- _______________________________________________________-->
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+            </div>
+         </div>
+         <!-- _______________________________________________________________________________-->
+         <div class="cd_timeline-block" id="timeline_block_3">
+            <img class="cd_timeline-img cd-movie" src="img/storyline/Unimi.jpg" alt="Unimi"> 
+            <div class="cd_timeline-content">
+               <h2>Title of section 3</h2>
+               <!-- sottotitolo ____-->
+               <div class="timeline-content-info"> 
+                  <span class="timeline-content-info-title">
+                  <i class="fa fa-certificate" aria-hidden="true"></i>
+                  27/09/2000
+                  </span>
+               </div>
+               <!-- _______________________________________________________-->
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+            </div>
+         </div>
+         <!-- INSERIRE QUI NUOVI BLOCCHI NEL TEMPO -->
+         <!-- _______________________________________________________________________________-->
+         <div class="cd_timeline-block" id="timeline_block_final">
+            <a href="pages/contact.html">
+            <img class="cd_timeline-img cd-movie" src="img/storyline/logos/my_story_white_BOLD.png" alt="readme">
+            </a>
+            <div class="cd_timeline-content" style="background-color: transparent;">
+            </div>
+         </div>
+         <!-- _______________________________________________________________________________-->
+      </section>
+
+
+
+      <h1 id="hobby_link">Le mie Passioni</h1>
+      <section class="hobby_container">
+         <div>
+            <a href="pages/computing.html">
+               <img class="hobby" src="img/hobby/cover/computing.jpg" alt="it"> 
+               <h3 id = "hobby_title_1">Informatica</h3>
+            </a>
+         </div>
+         <div>
+            <a href="pages/projects.html">
+               <img class="hobby" src="img/hobby/cover/printed.jpg" alt="projects"> 
+               <h3 id = "hobby_title_2">Progetti</h3>
+            </a>
+         </div>
+         <div>
+            <a href="pages/not_found.html">
+               <img class="hobby" src="img/hobby/cover/roverway.jpg" alt="trip"> 
+               <h3 id = "hobby_title_3">Viaggi</h3>
+            </a>
+         </div>
+         <div>
+            <a href="pages/not_found.html">
+               <img class="hobby" src='img/hobby/cover/future.jpg' alt="future"> 
+               <h3 id = "hobby_title_4">Obiettivi futuri</h3>
+            </a>
+         </div>
+      </section>
+
+
+         <footer>
+            <div class='social-buttons'>
+               <a href='http://www.gmail.com' target='blank' class='social-margin'>
+                  <div class='social-icon envelope'>
+                     <i class='fa fa-envelope' aria-hidden='true'></i> 
+                  </div>
+               </a>
+               <a href='https://www.facebook.com/gabrieletomai.tomai' target='blank' class='social-margin'>
+                  <div class='social-icon facebook'>
+                     <i class='fab fa-facebook' aria-hidden='true'></i> 
+                  </div>
+               </a>
+               <!-- github  Button -->
+               <a href='https://github.com/Gabriele-tomai00' target='blank' class='social-margin'>
+                  <div class='social-icon github'>
+                     <i class='fab fa-github' aria-hidden='true'></i> 
+                  </div>
+               </a>
+               <!-- instagram  Button -->
+               <a href='https://www.instagram.com/gabriele_tomai' target='blank' class='social-margin'>
+                  <div class='social-icon instagram'>
+                     <i class='fab fa-instagram' aria-hidden='true'></i> 
+                  </div>
+               </a>
+            </div>
+         </footer>
+
+
+
+      <script>
+         it = {
+             
+             home_nav: "<a href='#timeline_link'>LA MIA STORIA</a><a href='#hobby_link'>PASSIONI</a><a href='pages/contact.html'>CONTATTI</a><a id='element_botton_language' onclick='switch_language()'> <div id='round_botton_language'>EN</div></a>",
+             
+             title: "Benvenuto nel mio sito!",
+
+            info_theme: "USA IL TEMA SCURO<br>per preservare la tua vista!",
+            info_language: "CAMBIA LINGUA!<br>Scegli tra inglese e italiano", 
+         
+            timeline_link: "La mia storia",
+         
+             timeline_block_1: "<img class='cd_timeline-img cd-movie' src='img/storyline/Fagagna.jpg' alt='Fagagna'><div class='cd_timeline-content'><h2>       L'infanzia              </h2><div class='timeline-content-info'><span class='timeline-content-info-title'><i class='fa fa-certificate' aria-hidden='true'></i>       27/09/2000 - 2014    </span></div><p id='timeline_block_content_1'>         Sono nato a San Daniele del Friuli (UD) e cresciuto a Fagagna, dove ho frequentato le scuole elementari e le medie fino a 13 anni                         </p></div> ",
+             timeline_block_2: "<img class='cd_timeline-img cd-movie' src='img/storyline/Malignani.jpg' alt='Malignani'><div class='cd_timeline-content'><h2>   Le Scuole Superiori     </h2><div class='timeline-content-info'><span class='timeline-content-info-title'><i class='fa fa-certificate' aria-hidden='true'></i>   	 2014 - 2019          </span></div><p id='timeline_block_content_1'>         Ho studiato al liceo scientifico delle scienze applicate Malignani di Udine per cinque anni. Le materie di studio principali sono la matematica e le scienze, ma ho iniziato a studiare anche informatica    </p></div> ",
+             timeline_block_3: "<img class='cd_timeline-img cd-movie' src='img/storyline/Unimi.jpg' alt='Unimi'><div class='cd_timeline-content'><h2>   		   L'università             </h2><div class='timeline-content-info'><span class='timeline-content-info-title'><i class='fa fa-certificate' aria-hidden='true'></i>       2019 -now            </span></div><p id='timeline_block_content_1'>         Frequento l’università degli studi di Milano e studio sicurezza dei sistemi e delle reti informatiche                          </p></div> ",
+             timeline_block_final: "<a href='pages/contact.html'><img class='cd_timeline-img cd-movie' src='img/storyline/logos/la_mia_storia_bianco_BOLD.png' alt='readme'></a><div class='cd_timeline-content' style='background-color: transparent;''></div>",
+             
+         
+             hobby_link: "Le mie passioni",
+             hobby_title_1: "Informatica",
+             hobby_title_2: "Progetti",
+             hobby_title_3: "Viaggi",
+             hobby_title_4: "Obiettivi futuri",
+         
+         };
+         
+         en = {
+             
+             home_nav: "<a href='#timeline_link'>MY HYSTORY</a><a href='#hobby_link'>HOBBY</a><a href='pages/contact.html'>CONTACT</a><a id='element_botton_language' onclick='switch_language()'> <div id='round_botton_language'>IT</div></a>",
+             
+             title: "Welcome to my Website!",
+
+            info_theme: "USE THE DARK THEME<br>to preserve your views",
+            info_language: "CHANGE LANGUAGE!<br>Choose between English and Italian", 
+         
+             timeline_link: "My History",
+         
+             timeline_block_1: "<img class='cd_timeline-img cd-movie' src='img/storyline/Fagagna.jpg' alt='Fagagna'><div class='cd_timeline-content'><h2>       Childhood               </h2><div class='timeline-content-info'><span class='timeline-content-info-title'><i class='fa fa-certificate' aria-hidden='true'></i>           27/09/2000 - 2014            </span></div><p id='timeline_block_content_1'>                   I was born in San Daniele del Friuli (UD) and I grew up in Fagagna, where I attended primary and secondary school since I was 13 years old                         </p></div> ",
+             timeline_block_2: "<img class='cd_timeline-img cd-movie' src='img/storyline/Malignani.jpg' alt='Malignani'><div class='cd_timeline-content'><h2>   High Schools            </h2><div class='timeline-content-info'><span class='timeline-content-info-title'><i class='fa fa-certificate' aria-hidden='true'></i>           2014 - 2019           </span></div><p id='timeline_block_content_1'>                   I studied at the scientific high school of applied sciences Malignani of Udine for five years. The main subjects of study are mathematics and science; but I have also started studying computer science                         </p></div> ",
+             timeline_block_3: "<img class='cd_timeline-img cd-movie' src='img/storyline/Unimi.jpg' alt='Unimi'><div class='cd_timeline-content'><h2>   		   The University          </h2><div class='timeline-content-info'><span class='timeline-content-info-title'><i class='fa fa-certificate' aria-hidden='true'></i>           2019 -now           </span></div><p id='timeline_block_content_1'>                   I attend the University of Milan and I study Computer Systems and Networks Security                        </p></div> ",
+             timeline_block_final: "<a href='pages/contact.html'><img class='cd_timeline-img cd-movie' src='img/storyline/logos/my_story_white_BOLD.png' alt='readme'></a><div class='cd_timeline-content' style='background-color: transparent;''></div>",
+
+         
+             hobby_link: "My Hobby",
+             hobby_title_1: "Computing",
+             hobby_title_2: "Projects",
+             hobby_title_3: "Trip",
+             hobby_title_4: "future Objectives",
+         
+         };
+         
+      </script>
+      <script src="js/jquery/3.6.0/jquery.min.js"></script> 
+      <script src="js/script.js"></script>
+   </body>
+</html>

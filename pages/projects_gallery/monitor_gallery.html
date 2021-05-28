@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+      <meta charset="utf-8">
+      <title>Gallery</title>
+      <link rel="stylesheet" type="text/css" href="../../css/style.css">
+      <link rel="stylesheet" type="text/css" id="theme"  href="../../css/light.css"/>
+      
+      <!--ICONS-->
+      <link rel="stylesheet" href="../../fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+
+      <!-- per gestire bene il responsive -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+   </head>
+   <body>
+      <!-- TOP BAR-------------------------->
+      <nav>
+         <a href='../../index.html'><i class='fa fa-home'></i> Home</a>
+         <a href='javascript:history.back()'>Torna indietro</a>
+         <a id='back_to_top' href='#chk'>Torna su</a>
+
+         <a id='element_botton_language' onclick='switch_language()'>
+            <div id='round_botton_language'>EN</div>
+         </a>
+      </nav>
+      <!-------------------------------------->
+      
+      <!--BOTTONE PER SWITCH TEMA CSS-------------->
+      <input type="checkbox" class="checkbox" id="chk"/>
+      <label class="label" id="label_secondary_pages" for="chk">
+         <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+      <span class="ball"></span>
+      </label>
+      <!-------------------------------------------->
+
+  <!------------------MONITOR------------------------------- -->
+<div class="container_gallery">
+
+   <h1 id="title_secondary_page">Il Monitor Apple</h1>
+    
+      <!-- Photo Grid -->
+         <div class='myGallery'>
+            <img src='../../img/hobby/projects/monitor/1.jpg'>
+            <img src='../../img/hobby/projects/monitor/2.jpg'>
+            <img src='../../img/hobby/projects/monitor/3.jpg'>
+            <img src='../../img/hobby/projects/monitor/4.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/5.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/6.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/7.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/8.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/9.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/10.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/11.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/12.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/13.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/14.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/15.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/16.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/17.jpg'>
+            <img data-src='../../img/hobby/projects/monitor/18.jpg'>
+         </div>
+</div>
+
+
+
+
+<footer>
+   <div class='social-buttons'>
+      <a href='http://www.gmail.com' target='blank' class='social-margin'>
+         <div class='social-icon envelope'>
+            <i class='fa fa-envelope' aria-hidden='true'></i> 
+         </div>
+      </a>
+      <a href='https://www.facebook.com/gabrieletomai.tomai' target='blank' class='social-margin'>
+         <div class='social-icon facebook'>
+            <i class='fab fa-facebook' aria-hidden='true'></i> 
+         </div>
+      </a>
+      <!-- github  Button -->
+      <a href='https://github.com/Gabriele-tomai00' target='blank' class='social-margin'>
+         <div class='social-icon github'>
+            <i class='fab fa-github' aria-hidden='true'></i> 
+         </div>
+      </a>
+      <!-- instagram  Button -->
+      <a href='https://www.instagram.com/gabriele_tomai' target='blank' class='social-margin'>
+         <div class='social-icon instagram'>
+            <i class='fab fa-instagram' aria-hidden='true'></i> 
+         </div>
+      </a>
+   </div>
+</footer>
+
+
+<script>
+it = {
+     nav: "<a href='../../index.html'><i class='fa fa-home'></i> Home</a><a href='javascript:history.back()'>Torna indietro</a><a id='back_to_top' href='#chk'>Torna su</a><a id='element_botton_language' onclick='switch_language()'><div id='round_botton_language'>EN</div></a>",
+     title_secondary_page: "Il Monitor Apple",
+ }
+
+en = {
+     nav: "<a href='../../index.html'><i class='fa fa-home'></i> Home</a><a href='javascript:history.back()'>Go Back</a><a id='back_to_top' href='#chk'>Back to Top</a><a id='element_botton_language' onclick='switch_language()'><div id='round_botton_language'>IT</div></a>",
+     title_secondary_page: "The Apple Monitor",
+ }
+
+</script>
+<script src="../../js/jquery/3.6.0/jquery.min.js"></script> 
+<script src="../../js/script.js"></script>  
+
+</body>
+</html>

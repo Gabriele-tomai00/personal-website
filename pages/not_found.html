@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+      <meta charset="utf-8">
+      <title>Homepage</title>
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" id="theme"  href="../css/light.css"/>
+
+      <!--ICONS-->
+      <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+
+      <!-- per gestire bene il responsive -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   </head>
+   <body>
+      <!-- TOP BAR _______________________________________________________________________________-->
+
+      <nav>
+         <a href='../index.html'><i class='fa fa-home'></i> Home</a>
+         <a id='element_botton_language' onclick='switch_language()'>
+            <div id='round_botton_language'>En</div>
+         </a>
+      </nav>
+
+      <!-- _______________________________________________________________________________-->
+      <!--BOTTONE PER SWITCH TEMA CSS ____________________________________________________-->
+      <input type="checkbox" class="checkbox" id="chk"/>
+      <label class="label" id="label_secondary_pages" for="chk">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+      <span class="ball"></span>
+      </label>
+      <!-- _______________________________________________________________________________-->
+      <div class="content_not_found">
+         <h1 id='not_found_title'>Pagina ancora in lavorazione :(</h1>
+         <br>
+         <h3 id='not_found_text'>Questa pagina non è ancora completata e quindi non può essere visualizzata, ma sarà disponibile al più presto.<br> 
+            <a href='javascript:history.back()'>
+            <span id='color_content_not_found'>Puoi tornare indietro</span>
+            </a> 
+            per visualizzare il resto del materiale. Grazie per aver visualizzato il mio sito!
+         </h3>
+      </div>
+
+      
+      <script>
+         it = {
+            nav: "<a href='../index.html'><i class='fa fa-home'></i> Home</a><a id='element_botton_language' onclick='switch_language()'><div id='round_botton_language'>EN</div></a>",
+         
+             not_found_title: "Pagina ancora in lavorazione :(",
+             not_found_text: "Questa pagina non è ancora completata e quindi non può essere visualizzata, ma sarà disponibile al più presto.<br><a href='javascript:history.back()'><span id='color_content_not_found'>Puoi tornare indietro</span></a> per visualizzare il resto del materiale. Grazie per aver visualizzato il mio sito!",
+         
+         };
+         
+         en = {
+            nav: "<a href='../index.html'><i class='fa fa-home'></i> Home</a><a id='element_botton_language' onclick='switch_language()'><div id='round_botton_language'>IT</div></a>",
+         
+             not_found_title: "Work in Progress :(",
+             not_found_text: "This page isn't ... ancora completata e quindi non può essere visualizzata, ma sarà disponibile al più presto.<br><a href='javascript:history.back()'><span id='color_content_not_found'>Puoi tornare indietro</span></a> per visualizzare il resto del materiale. Grazie per aver visualizzato il mio sito!",
+         
+         };
+      </script>
+   <script src="../js/jquery/3.6.0/jquery.min.js"></script>       
+   <script src="../js/script.js"></script>
+   </body>
+</html>
