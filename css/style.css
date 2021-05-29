@@ -80,6 +80,8 @@ nav a {
 	margin-bottom: auto;
 	margin-right: 25px;
 	margin-left: 25px;
+	text-decoration: none;
+
 }
 
 nav a:hover {
@@ -216,15 +218,20 @@ button {
 }
 
 
-/* -LINK-----------------------------------------------------*/
+/* -LINK-----------------------------------------------------------------------*/
 
-a,
-u {
-	text-decoration: none;
+a, u {
 	color: #ffffff;
 	cursor: pointer;
 }
 
+a {
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #fed136;
+}
 
 /* ---ANIMAZIONI---------------------------------------------*/
 
@@ -924,10 +931,8 @@ footer {
 	background-color: black;
 	display: flex;
 	height: 90px;
-
 	position: absolute;
 	width: 100%;
-
 }
  
 .social-buttons {
@@ -940,15 +945,17 @@ footer {
 
 .social-margin {
 	margin-right: 15px;
-}
+	text-decoration: none;
 
+}
+/*
 a,
 a:hover,
 a:focus,
 a:active {
 	text-decoration: none;
 }
-
+*/
 .social-icon {
 	margin: auto;
 	/* per tenere la stessa distanza tra sopra e sotto */
@@ -967,6 +974,7 @@ a:active {
 	line-height: 1px;
 	padding-top: 11px;
 	transition: all 0.5s;
+
 }
 
 @media only screen and (max-width: 750px) {

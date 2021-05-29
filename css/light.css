@@ -3,6 +3,23 @@ html, body {
 	background-color: #eee;
 }
 
+/* -LINK-----------------------------------------------------------------------*/
+
+a, u {
+	color: black;
+}
+
+a:hover {
+	color: #fed136;
+}
+
+/*---TOP_BAR------------------------------------------------*/
+/* necessary because the colour of link change */
+
+nav a {
+	color: white;
+}
+
 /* ----Header----------------------------------------------*/
 
 header {
