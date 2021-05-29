@@ -27,9 +27,8 @@ body {
 }
 
 body {
-	visibility: hidden;
+	visibility: hidden;		/*until page is loaded */
 }
-
 
 /* for change theme */
 
@@ -1003,7 +1002,7 @@ a:active {
 		margin-right: 3px;
 		/*per tenere distanti i tasti tra loro */
 		margin-left: 3px;
-		zoom: 70%;
+		transform: scale(0.7);		/* zoom 70% */
 	}
 }
 
@@ -1011,7 +1010,6 @@ a:active {
 	/*for galaxy fold */
 	.social-icon {
 		margin: 0 10px 0px 10px;
-		zoom: 70%;
 	}
 }
 
