@@ -182,9 +182,10 @@ button {
 	text-transform: uppercase;
 	font-weight: 700;
 	margin: 5px 10px 10px 0 !important;
-	color: #fff;
+	color: #fff !important;
 	background-color: #fed136;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 
@@ -554,6 +555,10 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	/* i blocchi possono andare a capo */
+}
+
+.hobby_container a {
+	text-decoration: none;		/* not underline */
 }
 
 @media screen and (min-width: 1500px) {
