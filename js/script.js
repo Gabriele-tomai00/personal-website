@@ -45,17 +45,16 @@ chk.addEventListener('change', () => {
 function set_trnasition_elements() {
     document.getElementsByClassName("ball")[0].style.transition = "transform .2s linear"; //attivo l'animazione con il click
     document.body.style.transition = "0.8s";            // attivo l'animazione dei colori 
+
     var a = document.getElementsByTagName("a");
     for (var i = 0; i<a.length; i++) {
       try {
-          a.style.transition = "0.8s"; 
+          a[i].style.transition = "0.8s"; 
       } catch {
           null;
       }
     }
-
     document.getElementById("round_botton_language").style.transition = "0.8s";
-
 }
 
 
