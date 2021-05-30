@@ -54,7 +54,7 @@ function set_trnasition_elements() {
           null;
       }
     }
-    document.getElementById("round_botton_language").style.transition = "0.8s";
+    document.getElementById("element_botton_language").style.transition = "0.8s";
 }
 
 
