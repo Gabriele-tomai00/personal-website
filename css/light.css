@@ -34,11 +34,6 @@ header {
 	color: white;
 }
 
-#color_content_not_found {
-	color: black;
-	text-decoration: underline;
-}
-
 .ball {
 	background-color: #eee !important;
 }

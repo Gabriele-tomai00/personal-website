@@ -30,16 +30,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const chk = document.getElementById('chk');
 chk.addEventListener('change', () => {
-document.getElementsByClassName("ball")[0].style.transition = "transform .2s linear"; //attivo l'animazione con il click
-document.body.style.transition = "0.8s";            // attivo l'animazione dei colori 
-if ( document.getElementById("chk").checked == true)  //se ho premuto il bottone passo al tema scuro
-    change_theme('dark');
-else         
-    change_theme('light');
+
+    set_trnasition_elements();  /*add a transition of 0.8 seconds */
+
+    if ( document.getElementById("chk").checked == true)  //se ho premuto il bottone passo al tema scuro
+        change_theme('dark');
+    else         
+        change_theme('light');
 
 });
 
-/*------------------------------------------------*/
+/*-----ANIMATION OF TRANSIZION-------------------------------------------*/
+
+function set_trnasition_elements() {
+    document.getElementsByClassName("ball")[0].style.transition = "transform .2s linear"; //attivo l'animazione con il click
+    document.body.style.transition = "0.8s";            // attivo l'animazione dei colori 
+    var a = document.getElementsByTagName("a");
+    for (var i = 0; i<a.length; i++) {
+      try {
+          a.style.transition = "0.8s"; 
+      } catch {
+          null;
+      }
+    }
+
+    document.getElementById("round_botton_language").style.transition = "0.8s";
+
+}
 
 
 //SECOND ONLOAD FUNCTION (AFTER LANGUAGE)
