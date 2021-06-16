@@ -27,8 +27,10 @@ body {
 }
 
 body {
-	visibility: hidden;		/*until page is loaded */
+	visibility: hidden;
+	/*until page is loaded */
 }
+
 
 /* for change theme */
 
@@ -80,7 +82,6 @@ nav a {
 	margin-right: 25px;
 	margin-left: 25px;
 	text-decoration: none;
-
 }
 
 nav a:hover {
@@ -173,7 +174,8 @@ nav a:hover {
 
 /*--- ALL_BUTTON--------------------------------------*/
 
-.button, button {
+.button,
+button {
 	border-radius: 6px;
 	font-size: 13px;
 	padding: 15px 30px;
@@ -189,13 +191,11 @@ nav a:hover {
 	margin: 5px 5px 5px 20px !important;
 }
 
-
 @media screen and (max-width: 1050px) {
 	.btn_contact {
 		margin: 5px 5px 5px 5px !important;
 	}
 }
-
 
 
 /*---NOT_FOUND-------------------------------------------------------------------*/
@@ -230,7 +230,8 @@ nav a:hover {
 
 /* -LINK-----------------------------------------------------------------------*/
 
-a, u {
+a,
+u {
 	color: #ffffff;
 	cursor: pointer;
 }
@@ -242,6 +243,7 @@ a {
 a:hover {
 	color: #fed136;
 }
+
 
 /* ---ANIMAZIONI---------------------------------------------*/
 
@@ -567,7 +569,8 @@ body {
 }
 
 .hobby_container a {
-	text-decoration: none;		/* not underline */
+	text-decoration: none;
+	/* not underline */
 }
 
 @media screen and (min-width: 1500px) {
@@ -948,7 +951,7 @@ footer {
 	position: absolute;
 	width: 100%;
 }
- 
+
 .social-buttons {
 	margin: auto;
 	/* margin:20px 10px; */
@@ -960,8 +963,9 @@ footer {
 .social-margin {
 	margin-right: 15px;
 	text-decoration: none;
-
 }
+
+
 /*
 a,
 a:hover,
@@ -970,6 +974,7 @@ a:active {
 	text-decoration: none;
 }
 */
+
 .social-icon {
 	margin: auto;
 	/* per tenere la stessa distanza tra sopra e sotto */
@@ -988,7 +993,6 @@ a:active {
 	line-height: 1px;
 	padding-top: 11px;
 	transition: all 0.5s;
-
 }
 
 @media only screen and (max-width: 750px) {
@@ -1012,7 +1016,8 @@ a:active {
 		margin-right: 3px;
 		/*per tenere distanti i tasti tra loro */
 		margin-left: 3px;
-		transform: scale(0.7);		/* zoom 70% */
+		transform: scale(0.7);
+		/* zoom 70% */
 	}
 }
 
@@ -1030,6 +1035,7 @@ a:active {
 
 
 /* Mail Button Styling */
+
 .envelope {
 	font-size: 22px;
 	padding-top: 9px;
@@ -1045,6 +1051,7 @@ a:active {
 
 
 /* Facebook Button Styling */
+
 .facebook {
 	font-size: 22px;
 	padding-top: 9px;
@@ -1067,7 +1074,8 @@ a:active {
 	background-color: #495057;
 	/*#4183c4; */
 	color: #ffffff;
-	border-color: #495057; /*#4183c4;  */
+	border-color: #495057;
+	/*#4183c4;  */
 }
 
 .github:hover {
