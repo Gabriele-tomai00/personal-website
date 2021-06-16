@@ -1,114 +1,94 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-	<meta charset="utf-8">
-	<title>Contact</title>
-
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-   <link rel="stylesheet" type="text/css" id="theme"  href="../css/light.css"/>
-
+   <head>
+      <meta charset="utf-8">
+      <title>Contact</title>
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" id="theme"  href="../css/light.css"/>
       <!--ICONS-->
       <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.3-web/css/all.min.css">
-
       <!-- per gestire bene il responsive -->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-
-</head>
-
-<body>
-
-	<!-- TOP BAR _______________________________________________________________________________-->
-   <nav>
-      <a href='../index.html'><i class='fa fa-home'></i> Home</a>  
-      <a id='element_botton_language' onclick='switch_language()'>
-         <div id='round_botton_language'>En</div>
-      </a>
-   </nav>
-	<!-- _______________________________________________________________________________-->
-
-    
-        
-		<!--BOTTONE PER SWITCH TEMA CSS ____________________________________________________-->
-		<input type="checkbox" class="checkbox" id="chk"/>
-		<label class="label" id="label_secondary_pages" for="chk">
-			<i class="fas fa-sun"></i>
-			<i class="fas fa-moon"></i>
-			<span class="ball"></span>
-		</label>
-		<!-- _______________________________________________________________________________-->
-
-        <h1 id="title_secondary_page">Contatti</h1><br>
-
-
-    <form action="mailto:tomaigabriele@gmail.com" method="post" name = "utente" enctype="text/plain">
-
-        <section class="contact_form">	
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <!-- TOP BAR _______________________________________________________________________________-->
+      <nav>
+         <a href='../index.html'><i class='fa fa-home'></i> Home</a>  
+         <a id='element_botton_language' onclick='switch_language()'>
+            <div id='round_botton_language'>En</div>
+         </a>
+      </nav>
+      <!-- _______________________________________________________________________________-->
+      <!--BOTTONE PER SWITCH TEMA CSS ____________________________________________________-->
+      <input type="checkbox" class="checkbox" id="chk"/>
+      <label class="label" id="label_secondary_pages" for="chk">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+      <span class="ball"></span>
+      </label>
+      <!-- _______________________________________________________________________________-->
+      <h1 id="title_secondary_page">Contatti</h1>
+      <br>
+      <form action="mailto:tomaigabriele@gmail.com" method="post" name = "utente" enctype="text/plain">
+         <section class="contact_form">
             <div id="name_mail">Nome</div>
             <div id="content">Cognome</div>
-        </section>   
-        <div id="button_contact">
+         </section>
+         <div id="button_contact">
             <button type='submit'>INVIA</button>
             <button type='reset'>CANCELLA</button>
-        </div> 
-        
-    </form>
-
-
-
-    <footer style="background-color: transparent;">
-      <div class='social-buttons'>
-         <a href='http://www.gmail.com' target='blank' class='social-margin'>
-            <div class='social-icon envelope'>
-               <i class='fa fa-envelope' aria-hidden='true'></i> 
-            </div>
-         </a>
-         <a href='https://www.facebook.com/gabrieletomai.tomai' target='blank' class='social-margin'>
-            <div class='social-icon facebook'>
-               <i class='fab fa-facebook' aria-hidden='true'></i> 
-            </div>
-         </a>
-         <!-- github  Button -->
-         <a href='https://github.com/Gabriele-tomai00' target='blank' class='social-margin'>
-            <div class='social-icon github'>
-               <i class='fab fa-github' aria-hidden='true'></i> 
-            </div>
-         </a>
-         <!-- instagram  Button -->
-         <a href='https://www.instagram.com/gabriele_tomai' target='blank' class='social-margin'>
-            <div class='social-icon instagram'>
-               <i class='fab fa-instagram' aria-hidden='true'></i> 
-            </div>
-         </a>
-      </div>
-   </footer>
-
-<script>
-
-it = {
-    
-    nav: "<a href='../index.html'><i class='fa fa-home'></i> Home</a><a id='element_botton_language' onclick='switch_language()'><div id='round_botton_language'>EN</div></a>",
-
-    name_mail: "<div id='name_contact'>Nome:<br></div>       <input type='text' name='nome' placeholder=' Nome'>     <div id='mail_contact'>Mail:<br></div>      <input type='text' name='Mail' placeholder=' Mail'>",
-    content: "Contenuto:<br>    <textarea name='commento' rows='5' placeholder=' Contenuto'></textarea>",
-
-    button_contact: "<button class='btn_contact' type='submit'>invia</button><button class='btn_contact' type='reset'>CANCELLA</button>"
-};
-
-en = {
-    nav: "<a href='../index.html'><i class='fa fa-home'></i> Home</a><a id='element_botton_language' onclick='switch_language()'><div id='round_botton_language'>IT</div></a>",
-    title_secondary_page: "Contact",
-
-    name_mail: "<div id='name_contact'>Name:<br></div>       <input type='text' name='nome' placeholder=' Name'>     <div id='mail_contact'>Mail:<br></div>      <input type='text' name='Mail' placeholder=' Mail'>",
-    content: "Content:<br>    <textarea name='commento' rows='5' placeholder=' Content'></textarea>",
-
-    button_contact: "<button class='btn_contact' type='submit'>send</button><button class='btn_contact' type='reset'>reset</button>"
-
-};
-
-</script>
-<script src="../js/jquery/3.6.0/jquery.min.js"></script> 
-<script src="../js/script.js"></script>    
-</body>
-
+         </div>
+      </form>
+      <footer style="background-color: transparent;">
+         <div class='social-buttons'>
+            <a href='http://www.gmail.com' target='blank' class='social-margin'>
+               <div class='social-icon envelope'>
+                  <i class='fa fa-envelope' aria-hidden='true'></i> 
+               </div>
+            </a>
+            <a href='https://www.facebook.com/gabrieletomai.tomai' target='blank' class='social-margin'>
+               <div class='social-icon facebook'>
+                  <i class='fab fa-facebook' aria-hidden='true'></i> 
+               </div>
+            </a>
+            <!-- github  Button -->
+            <a href='https://github.com/Gabriele-tomai00' target='blank' class='social-margin'>
+               <div class='social-icon github'>
+                  <i class='fab fa-github' aria-hidden='true'></i> 
+               </div>
+            </a>
+            <!-- instagram  Button -->
+            <a href='https://www.instagram.com/gabriele_tomai' target='blank' class='social-margin'>
+               <div class='social-icon instagram'>
+                  <i class='fab fa-instagram' aria-hidden='true'></i> 
+               </div>
+            </a>
+         </div>
+      </footer>
+      <script>
+         it = {
+             
+             nav: "<a href='../index.html'><i class='fa fa-home'></i> Home</a><a id='element_botton_language' onclick='switch_language()'><div id='round_botton_language'>EN</div></a>",
+         
+             name_mail: "<div id='name_contact'>Nome:<br></div>       <input type='text' name='nome' placeholder=' Nome'>     <div id='mail_contact'>Mail:<br></div>      <input type='text' name='Mail' placeholder=' Mail'>",
+             content: "Contenuto:<br>    <textarea name='commento' rows='5' placeholder=' Contenuto'></textarea>",
+         
+             button_contact: "<button class='btn_contact' type='submit'>invia</button><button class='btn_contact' type='reset'>CANCELLA</button>"
+         };
+         
+         en = {
+             nav: "<a href='../index.html'><i class='fa fa-home'></i> Home</a><a id='element_botton_language' onclick='switch_language()'><div id='round_botton_language'>IT</div></a>",
+             title_secondary_page: "Contact",
+         
+             name_mail: "<div id='name_contact'>Name:<br></div>       <input type='text' name='nome' placeholder=' Name'>     <div id='mail_contact'>Mail:<br></div>      <input type='text' name='Mail' placeholder=' Mail'>",
+             content: "Content:<br>    <textarea name='commento' rows='5' placeholder=' Content'></textarea>",
+         
+             button_contact: "<button class='btn_contact' type='submit'>send</button><button class='btn_contact' type='reset'>reset</button>"
+         
+         };
+         
+      </script>
+      <script src="../js/jquery/3.6.0/jquery.min.js"></script> 
+      <script src="../js/script.js"></script>    
+   </body>
 </html>
