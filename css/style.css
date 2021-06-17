@@ -174,8 +174,7 @@ nav a:hover {
 
 /*--- ALL_BUTTON--------------------------------------*/
 
-.button,
-button {
+.button, button {
 	border-radius: 6px;
 	font-size: 13px;
 	padding: 15px 30px;
@@ -186,6 +185,15 @@ button {
 	cursor: pointer;
 	text-decoration: none;
 }
+
+@media screen and (max-width: 500px) {
+	.button, button {
+		font-size: 10px;
+		padding: 11px 15px;
+		font-weight: 600;
+	}
+}
+
 
 .btn_contact {
 	margin: 5px 5px 5px 20px !important;
@@ -373,7 +381,7 @@ header {
 h1 {
 	font-family: Lato-Light;
 	text-align: center;
-	padding: 50px 0 0 0;
+	padding: 80px 0 50px 0;
 }
 
 @media screen and (min-width: 700px) {
@@ -764,15 +772,17 @@ textarea {
 	}
 }
 
-
 /*
-#title_secondary_page {
-	text-align: left;
-	margin-left: 20px;
-	margin-bottom: 20px;
-	margin-top: 30px;
+@media only screen and (max-width: 450px) {
+	#title_secondary_page {
+		margin-top: 25px !important;
+		padding-top: 25px !important;
+
+	}
 }
+
 */
+
 
 .subtitle_secondary_page {
 	text-align: left;
