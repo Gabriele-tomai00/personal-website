@@ -813,8 +813,14 @@ textarea {
 }
 
 .container_text {
-	margin: 0 100px 0 100px;
+	margin: 0 300px 0 300px;
 	text-align: justify;
+}
+
+@media screen and (max-width: 2000px) {
+	.container_text {
+		margin: 0 200px 0 200px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
