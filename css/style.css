@@ -176,7 +176,7 @@ nav a:hover {
 
 .button, button {
 	position: relative;
-	margin-top: 10px;
+	margin-top: 0px;
 	border-radius: 6px;
 	font-size: 13px;
 	padding: 15px 30px;
@@ -662,7 +662,7 @@ body {
 }
 
 
-/*--INPUT TYPE E TEXT AREA----------*/
+/*--------INPUT TYPE E TEXT AREA--------------------------*/
 
 .contact_form {
 	display: flex;
@@ -774,23 +774,22 @@ textarea {
 	}
 }
 
-/*
-@media only screen and (max-width: 450px) {
-	#title_secondary_page {
-		margin-top: 25px !important;
-		padding-top: 25px !important;
 
-	}
-}
 
-*/
 
+/*-PARAGRAFI----------------------------------------------------------*/
 
 .subtitle_secondary_page {
 	text-align: left;
-	font-size: 30px;
+	font-size: 40px;
 	clear: both;
 	padding: 80px 0 20px 0 !important;
+}
+
+@media screen and (max-width: 600px) {
+	.subtitle_secondary_page {
+		font-size: 28px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -805,8 +804,6 @@ textarea {
 	}
 }
 
-
-/*-PARAGRAFI----------------------------------------------------------*/
 
 @media screen and (min-width: 800px) {
 	.container_text {
